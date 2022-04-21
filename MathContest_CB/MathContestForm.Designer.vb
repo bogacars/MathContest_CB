@@ -22,6 +22,7 @@ Partial Class MathContestForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.StudentInfoGroupBox = New System.Windows.Forms.GroupBox()
         Me.GradeLabel = New System.Windows.Forms.Label()
         Me.AgeLabel = New System.Windows.Forms.Label()
@@ -46,6 +47,7 @@ Partial Class MathContestForm
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.SubmitButton = New System.Windows.Forms.Button()
         Me.StudentAnswerTextBox = New System.Windows.Forms.TextBox()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.StudentInfoGroupBox.SuspendLayout()
         CType(Me.GradeNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AgeNumericUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -97,6 +99,7 @@ Partial Class MathContestForm
         Me.GradeNumericUpDown.Name = "GradeNumericUpDown"
         Me.GradeNumericUpDown.Size = New System.Drawing.Size(46, 22)
         Me.GradeNumericUpDown.TabIndex = 3
+        Me.ToolTip.SetToolTip(Me.GradeNumericUpDown, "Select Grade")
         '
         'AgeNumericUpDown
         '
@@ -105,6 +108,7 @@ Partial Class MathContestForm
         Me.AgeNumericUpDown.Name = "AgeNumericUpDown"
         Me.AgeNumericUpDown.Size = New System.Drawing.Size(51, 22)
         Me.AgeNumericUpDown.TabIndex = 2
+        Me.ToolTip.SetToolTip(Me.AgeNumericUpDown, "Select age")
         '
         'NameLabel
         '
@@ -123,6 +127,7 @@ Partial Class MathContestForm
         Me.NameTextBox.Name = "NameTextBox"
         Me.NameTextBox.Size = New System.Drawing.Size(203, 22)
         Me.NameTextBox.TabIndex = 1
+        Me.ToolTip.SetToolTip(Me.NameTextBox, "Enter Name here")
         '
         'MathProblemGroupBox
         '
@@ -266,7 +271,8 @@ Partial Class MathContestForm
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(145, 60)
         Me.ExitButton.TabIndex = 14
-        Me.ExitButton.Text = "E&xit"
+        Me.ExitButton.Text = "E&xit "
+        Me.ToolTip.SetToolTip(Me.ExitButton, "Exits the program")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
         'SummaryButton
@@ -276,6 +282,7 @@ Partial Class MathContestForm
         Me.SummaryButton.Size = New System.Drawing.Size(145, 60)
         Me.SummaryButton.TabIndex = 13
         Me.SummaryButton.Text = "Summary"
+        Me.ToolTip.SetToolTip(Me.SummaryButton, "Displays a summary of all times played")
         Me.SummaryButton.UseVisualStyleBackColor = True
         '
         'ClearButton
@@ -285,6 +292,7 @@ Partial Class MathContestForm
         Me.ClearButton.Size = New System.Drawing.Size(145, 60)
         Me.ClearButton.TabIndex = 12
         Me.ClearButton.Text = "Clear"
+        Me.ToolTip.SetToolTip(Me.ClearButton, "Clears all progress/score")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
         'SubmitButton
@@ -294,14 +302,17 @@ Partial Class MathContestForm
         Me.SubmitButton.Size = New System.Drawing.Size(145, 60)
         Me.SubmitButton.TabIndex = 11
         Me.SubmitButton.Text = "Submit"
+        Me.ToolTip.SetToolTip(Me.SubmitButton, "This will submit your answer")
         Me.SubmitButton.UseVisualStyleBackColor = True
         '
         'StudentAnswerTextBox
         '
+        Me.StudentAnswerTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StudentAnswerTextBox.Location = New System.Drawing.Point(9, 207)
         Me.StudentAnswerTextBox.Name = "StudentAnswerTextBox"
         Me.StudentAnswerTextBox.Size = New System.Drawing.Size(200, 22)
         Me.StudentAnswerTextBox.TabIndex = 7
+        Me.ToolTip.SetToolTip(Me.StudentAnswerTextBox, "Enter your answer here")
         '
         'MathContestForm
         '
@@ -313,7 +324,7 @@ Partial Class MathContestForm
         Me.Controls.Add(Me.MathProblemGroupBox)
         Me.Controls.Add(Me.StudentInfoGroupBox)
         Me.Name = "MathContestForm"
-        Me.Text = "Form1"
+        Me.Text = "Math Contest"
         Me.StudentInfoGroupBox.ResumeLayout(False)
         Me.StudentInfoGroupBox.PerformLayout()
         CType(Me.GradeNumericUpDown, System.ComponentModel.ISupportInitialize).EndInit()
@@ -351,4 +362,5 @@ Partial Class MathContestForm
     Friend WithEvents GradeLabel As Label
     Friend WithEvents AgeLabel As Label
     Friend WithEvents StudentAnswerTextBox As TextBox
+    Friend WithEvents ToolTip As ToolTip
 End Class

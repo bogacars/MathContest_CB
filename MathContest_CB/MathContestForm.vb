@@ -138,7 +138,7 @@ Public Class MathContestForm
     End Sub
     Private Sub SubtractRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles SubtractRadioButton.CheckedChanged
         FirstNumberTextBox.Text = CStr(CInt(Int((20 * Rnd() * +1))))
-        SecondNumberTextBox.Text = CStr(CInt(Int((20 * Rnd() * +1))))
+        SecondNumberTextBox.Text = CStr(CInt(Int((12 * Rnd() * +1))))
     End Sub
     Private Sub MultiplyRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles MultiplyRadioButton.CheckedChanged
         FirstNumberTextBox.Text = CStr(CInt(Int((20 * Rnd() * +1))))
@@ -146,7 +146,7 @@ Public Class MathContestForm
     End Sub
     Private Sub DivideRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles DivideRadioButton.CheckedChanged
         FirstNumberTextBox.Text = CStr(CInt(Int((20 * Rnd() * +1))))
-        SecondNumberTextBox.Text = CStr(CInt(Int((20 * Rnd() * +1))))
+        SecondNumberTextBox.Text = CStr(CInt(Int((12 * Rnd() * +1))))
     End Sub
 End Class
 

@@ -2,7 +2,7 @@
 'RCET 0265
 'Spring 22
 'Math Contest
-'
+'https://github.com/bogacars/MathContest_CB.git
 
 Option Explicit On
 Option Strict On

@@ -281,7 +281,7 @@ Partial Class MathContestForm
         Me.SummaryButton.Name = "SummaryButton"
         Me.SummaryButton.Size = New System.Drawing.Size(145, 60)
         Me.SummaryButton.TabIndex = 13
-        Me.SummaryButton.Text = "Summary"
+        Me.SummaryButton.Text = "S&ummary"
         Me.ToolTip.SetToolTip(Me.SummaryButton, "Displays a summary of all times played")
         Me.SummaryButton.UseVisualStyleBackColor = True
         '
@@ -291,7 +291,7 @@ Partial Class MathContestForm
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(145, 60)
         Me.ClearButton.TabIndex = 12
-        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.Text = "C&lear"
         Me.ToolTip.SetToolTip(Me.ClearButton, "Clears all progress/score")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
@@ -301,7 +301,7 @@ Partial Class MathContestForm
         Me.SubmitButton.Name = "SubmitButton"
         Me.SubmitButton.Size = New System.Drawing.Size(145, 60)
         Me.SubmitButton.TabIndex = 11
-        Me.SubmitButton.Text = "Submit"
+        Me.SubmitButton.Text = "&Submit"
         Me.ToolTip.SetToolTip(Me.SubmitButton, "This will submit your answer")
         Me.SubmitButton.UseVisualStyleBackColor = True
         '
